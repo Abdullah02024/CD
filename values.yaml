@@ -1,0 +1,10 @@
+replicaCount: 2
+
+image:
+  repository: my-docker-repo/my-app
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: LoadBalancer
+  port: 80
